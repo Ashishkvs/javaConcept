@@ -18,7 +18,7 @@ public class OverrideHashcode {
 		// TODO Auto-generated method stub
 		int result=17;
 		result=31*result+user.hashCode();
-		result=31*result+age;
+		result=31*result+age; //primitive type don't have hashCode
 		result=31*result+phone.hashCode();
 		return result;
 	}
@@ -35,14 +35,9 @@ public class OverrideHashcode {
 			return false;
 		}
 		OverrideHashcode ovh=(OverrideHashcode)obj;
-		return false;
-	}
-
-
-	@Override
-	public String toString() {
-		// TODO Auto-generated method stub
-		return super.toString();
+		return ovh.user.equals(user)
+				&& ovh.age == age
+				&& ovh.phone.equals(phone);
 	}
 
 
@@ -54,7 +49,9 @@ public class OverrideHashcode {
 		System.out.println(oh.hashCode());  //1216558584
 		System.out.println(oh1.hashCode());  //1216558584
 		System.out.println(oh2.hashCode());  //1216558274
-		System.out.println(oh.equals(oh));// FALSE before implementation equals method it will return false
-															
+		System.out.println(oh.equals(oh1));// FALSE before implementation equals method it will return false
+		//Later true based on contents
+		
+		System.out.println(oh==oh1); //this will remain false as its internally equating ref whether u override equals method or not
 	}
 }
