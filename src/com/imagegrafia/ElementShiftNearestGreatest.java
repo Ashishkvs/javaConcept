@@ -9,7 +9,7 @@ public class ElementShiftNearestGreatest {
 			while (j < a.length) {
 				if (a[i] < a[j]) {
 					a[i]=a[j];
-					break;
+					break;//in order to stop on 1st occurence we need break
 				}
 				j++;
 			}
