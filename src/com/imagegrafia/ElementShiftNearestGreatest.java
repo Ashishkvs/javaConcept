@@ -1,4 +1,4 @@
-package com.example.demo;
+package com.imagegrafia;
 
 public class ElementShiftNearestGreatest {
 	public static void main(String[] args) {

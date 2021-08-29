@@ -1,4 +1,4 @@
-package com.example.demo;
+package com.imagegrafia;
 
 import java.util.Scanner;
 
