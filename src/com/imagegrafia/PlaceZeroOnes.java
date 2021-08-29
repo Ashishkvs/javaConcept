@@ -7,7 +7,7 @@ package com.imagegrafia;
 public class PlaceZeroOnes {
 	public static void main(String[] args) {
 		String digit="123456789";
-		
+		System.out.println("digits"+ digit);
 	}
 	
 	
