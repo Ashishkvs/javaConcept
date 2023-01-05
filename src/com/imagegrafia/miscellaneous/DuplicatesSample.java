@@ -10,7 +10,7 @@ public class DuplicatesSample {
     public static void main(String[] args) {
         String str = "AshishKumarishere";
         Map<Character,Integer> mapData = new HashMap<>();
-        Predicate<Map<Character,Integer>> isChar = Pre;
+//        Predicate<Map<Character,Integer>> isChar = Pre;
         Map<Character, Integer> duplicatesInString = findDuplicatesInString(str);
         //faced compilation issue for characters
 //        duplicatesInString.forEach(System.out::println);
@@ -29,7 +29,7 @@ public class DuplicatesSample {
         Stream.of().forEach(ch -> System.out.println(ch + "\t"));
     }
 
-    // find counts of each characters
+    // find counts of each character
     static Map<Character, Integer> findDuplicatesInString(String str) {
         Map<Character, Integer> dupCount = new HashMap<>();
         for (char ch : str.toCharArray()) {
