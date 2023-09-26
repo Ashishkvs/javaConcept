@@ -2,7 +2,7 @@ package com.imagegrafia.exception;
 
 public class ExceptionDemo {
 	public static void main(String[] args) {
-		int a=11;
+		int a=10;
 		
 			try {
 				if(a==10)
